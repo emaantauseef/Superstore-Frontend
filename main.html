@@ -1,0 +1,400 @@
+<html>
+<head>
+<title>MEA</title>
+<style>
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px 3px;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* backgroung colour for dots */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.button 
+{
+  background-color: rgb(169,169,169);
+  border: white;
+  color: black;
+  padding: 15px 24px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none ;
+  margin: 0;
+  cursor: pointer;
+  width: 98%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  background: black;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: rgb(212,175,55);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+display: flex;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  background-color: white;
+  padding: 20px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.rows 
+{
+display: flex;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <video width="1300" height="580" controls>
+  <source src="wait.mp4" type="video/mp4">
+</video>
+<div class="row">
+ <div> <img src="logos.jpeg"  style="width:200px;height:200px;display: block; margin-left: auto; margin-right: auto;"> </div>
+ <div> <h1  style = "text-align: center"> MEA SUPER STORE <br> </h1> 
+ <p> <b> Committed for best quality products <br> Upto your standards <br> Secure Healty and pure enviroment <br> A change you can see <br> And the best place to be </b> </p> </div>
+<div> <img src="black.png"  style="width:500px;height:200px;"> </div>
+<div > <img src="shss.jpg" style="display: block; text-align: left; width: 200px;"> </div>
+ </div>
+</div>
+
+<div class="navbar">
+  <a href="file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/sample.html">Home </a>
+  <a href="file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/about.html">About Us</a>
+  <a href="file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/contact.html">Contact</a>
+  <a href="file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/career.html">Careers</a>
+  <a href="file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/login.html" class="right">Login</a> 
+</div>
+
+<div class="row">
+  <div class="side">
+
+    <h2>Available Products</h2>
+  
+ 
+<a href="file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/baker.html" class="button"> <b> Bakery Items</b></a> </p>
+<a href= "file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/veges.html" class= "button"> <b> Vegetables </b> </a> </p>
+<a href= "file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/fruits.html" class= "button"> <b> Fruits </b> </a> </p>
+<a href= "file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/m%20and%20skincare.html" class= "button"> <b> Makeup and Skin Care </b></a></p>
+<a href = "file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/jewellery.html"class= "button" ><b> Jewellery </a></b></p>
+<a href = "file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/access.html"class= "button" ><b> Accessories </a></b></p>
+<a href = "file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/Stationary.html"class= "button"><b> Stationary Items </b></a></p>
+<a href= "file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/dry%20fruits.HTML" class= "button"> <b> Dry Fruits </b> </a> </p>
+<a href = "file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/ITCToys.html"class= "button"> <b>Toys </b></a></p>
+<a href = "file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/DRESSES.html"class= "button"> <b>Dresses </b></a></p>
+<a href = "file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/grocerry.HTML"class= "button"> <b>Grocerry </b></a></p>
+<a href= "file:///E:/Lectures/Introduction%20To%20Computing%20Lab/ITC%20Project/Electronics.html" class= "button"> <b>Electronics </b> </a></p>
+
+
+<h3 style= "font-size:20px"> VISION </h3>
+<p> “To be recognized as the best value provider ever” <p>
+
+ <h4 style= "font-size:20px"> MISSION </h4>
+<p> “We will make our unmatched services available to all major cities of Pakistan and beyond. We will strive for continuous improvement in our processes, services and offerings by using the most advanced tools and technology wherever possible to retain customers for life.” <p>
+
+<h5 style= "font-size:20px"> OUR PHILOSOPHY </h5>
+<p>“To put all our efforts in providing best value to all our partners, stake holders, customers and society at large” <p>
+
+ <h6 style= "font-size:20px"> COVID'19 Awareness Video </h6>
+ <video width="360" height="200" controls>
+  <source src="covidaware.mp4" type="video/mp4">
+</video>
+ 
+ 
+ </div>
+  
+  
+  <div class="main">
+    <h2 style="text-align: center"> WELCOME TO THE BIGGEST SUPER MARKET IN AREA </h2>
+	
+    <h5 style="font-size:20px; ">You're here at the official website of MEA super store. You are at the right website if you are finding high quality and best products for online shopping. We hope that you'll have a wonderfull shopping experience here and you'll come back again with positive feedbacks.<b> ENJOY SHOPPING! </b> </h5>
+    <div  style="height:200px;">  <img src="e.jpg" style="width:100%"> </div>
+    
+   
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="2.jpg" style="width:100%">
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="c.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="8.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="esra.jpeg" style="width:100%">
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+
+<h1 style="text-align: center"> WINTER SALE!!!</h1>
+<div class="row">
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="khaadi.jpeg" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Khaadi</h1> 
+      <p>Buy amazing and stylish Khaadi clothes on sales only at MEA super market. </p> 
+      <p>50% off</p>
+    </div>
+  </div>
+  </div>
+  
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="bata.jpg"  style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>BATA SHOES</h1> 
+      <p>Amazing sales on BATA shoes only in MEA SUPER MARKET. </p> 
+      <p>40% off</p>
+    </div>
+  </div>
+  </div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="logobakery.jpg"  style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Bakery</h1> 
+      <p>Bakery Items are available at sale till 1st December. </p> 
+      <p>25% off</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="row">
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="salesmakeup.jpg" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Makeup</h1> 
+      <p>These amazing makeup products are available here at sale for 1st month of winter.  </p> 
+      <p>20% off</p>
+    </div>
+  </div>
+  </div>
+  
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="sale.jpg"  style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Fruits</h1> 
+      <p>Buy your favourite fresh fruits on sale from MEA super Market.</p> 
+      <p>50% off</p>
+    </div>
+  </div>
+  </div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="kfc.png"  style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>KFC</h1> 
+      <p>Buy your favourite and delicious KFC foods on sale only at MEA super store. </p> 
+      <p>50% off</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<footer>
+  <h1 style= "font-size: 15px;" > Follow us on Instagram: </h1> <p> @mea_official </p>
+  <h2 style= "font-size: 15px;" > Login to our website for latest updates </h2> 
+  <h3 style= "font-size: 15px;" > Copyright ©2020 MEA Official </h3>
+ 
+</footer>
+
+</body>
+</html>
+
+</body>
+</html>
